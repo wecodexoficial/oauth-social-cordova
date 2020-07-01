@@ -1,7 +1,9 @@
 
 # Cordova Oauth Social
 
-ng2-cordova-oauth is an Oauth library which easily integrates in Angular2/Ionic2 or any other WEB or Cordova applications. The purpose of this library is to quickly and easily obtain an access token from various web services to use their APIs.
+Oauth Social is a library that easily integrates with Angular2 / Ionic2 or higher
+This library is based on ng2-cordova-oauth, we are doing updates
+This library already integrates Twitter Provider
 
 Changes and updates will be in this library for us @Wecodex
 
@@ -35,18 +37,18 @@ There are 2 types of entities in the library: Platform (i.e., Cordova, Browser) 
 You need to inject the Platform class into every class in which you wish to use them. For example, if you wish to use Facebook oauth in a particular class, it would look something like:
 
 ```javascript
-import {Facebook, Google} from 'ng2-cordova-oauth/core';
-import {OauthBrowser} from 'ng2-cordova-oauth/platform/browser'
+import {Facebook, Google} from 'oauth-social-cordova/core';
+import {OauthBrowser} from 'oauth-social-cordova/platform/browser'
 // or
-import {OauthCordova} from 'ng2-cordova-oauth/platform/cordova'
+import {OauthCordova} from 'oauth-social-cordova/platform/cordova'
 ```
 
 Alternatively you can use Angular2 Injector in order to provide platform specific service for all components:
 ```js
 import {bootstrap} from '@angular/platform-browser-dynamic'
 import {App} from './app.component'
-import {OauthCordova} from 'ng2-cordova-oauth/platform/cordova'
-import {Oauth} from 'ng2-cordova-oauth/oauth'
+import {OauthCordova} from 'oauth-social-cordova/platform/cordova'
+import {Oauth} from 'oauth-social-cordova/oauth'
 
 bootstrap(App, [
   { provide: Oauth, useClass: OauthCordova }
@@ -74,6 +76,7 @@ Currently it supports several oAuth providers: Facebook, Instagram, LinkedIn, Go
 ```js
 const provider = new Facebook({
     clientId: string,
+    clientType: string,
     appScope?: string[],
     redirectUri?: string,
     responseType?: string,
@@ -84,10 +87,16 @@ const provider = new Facebook({
 Each API call returns a promise.  The success callback will provide a response object and the error callback will return an `Error` object.  Not all providers use implicit grants.  Any provider that uses an explicit grant will return a `code` rather than an `access_token`.  The `code` must be
 further exchanged server side for an `access_token`.  This is for the safety of your users.
 
+
+The type of client is the variable that the api uses to identify the application, for example:
+Facebook = client_id
+Twitter = oauth_token
+
 ```js
 const oauth = new OauthCordova();
 const provider = new Facebook({
   clientId: "CLIENT_ID_HERE",
+  clientType: "client_id", //
   appScope: ["email"]
 })
 
