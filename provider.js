@@ -33,7 +33,7 @@ var OAuthProvider = /** @class */ (function () {
     };
     OAuthProvider.prototype.optionsToDialogUrl = function (options) {
         utility_1.utils.defaults(options, this.defaults);
-        var url = this.authUrl + "?oauth_token=" + options.clientId + "&redirect_uri=" + options.redirectUri;
+        var url = this.authUrl + "?"+ options.clientType + "=" + options.clientId + "&redirect_uri=" + options.redirectUri;
         if (options.appScope) {
             url += "&scope=" + this.serializeAppScope(options.appScope);
         }
