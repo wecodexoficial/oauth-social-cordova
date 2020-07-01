@@ -67,7 +67,7 @@ class MyComponent {
 ```
 
 
-## Using ng2-cordova-oauth In Your Project
+## Using oauth-social-cordova In Your Project
 
 Each web service API acts independently in this library.  However, when configuring each web service, one thing must remain consistent.
 
@@ -115,9 +115,16 @@ Now this library can work with a web browser, ionic serve, or ionic view in case
 
 Google, as of October 2016, has started blocking requests from web views commonly found in hybrid applications. For this reason, support for Google has been removed from this library.
 
-More information can be found at:
+Solution:
+UserAgents must be forced
 
-[https://developers.googleblog.com/2016/08/modernizing-oauth-interactions-in-native-apps.html](https://developers.googleblog.com/2016/08/modernizing-oauth-interactions-in-native-apps.html)
+The following configuration lines should be placed in your config.xml file
+
+```js
+<preference name="OverrideUserAgent" value="Mozilla/5.0 Google" />
+<preference name="OverrideUserAgent" value="Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2228.0 Safari/537.36" />
+```
+
 
 ## A Working Example
 
