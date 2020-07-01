@@ -19,8 +19,8 @@ For Cordova application:
 
 Installation
 ```
-ionic cordova plugin add cordova-plugin-inappbrowser
-npm install @ionic-native/in-app-browser
+$ ionic cordova plugin add cordova-plugin-inappbrowser
+$ npm install @ionic-native/in-app-browser
 ```
 
 
@@ -30,7 +30,7 @@ npm install @ionic-native/in-app-browser
 Installation
 ```
 $ cordova plugin add cordova-plugin-whitelist
-$ cordova prepare
+$ npm i cordova-plugin-whitelist
 ```
 
 
@@ -105,8 +105,11 @@ further exchanged server side for an `access_token`.  This is for the safety of 
 
 
 The type of client is the variable that the api uses to identify the application, for example:
+
 Facebook = client_id
+
 Twitter = oauth_token
+
 
 ```js
 const oauth = new OauthCordova();
