@@ -1,16 +1,11 @@
-[![Build Status](https://travis-ci.org/nraboy/ng2-cordova-oauth.svg?branch=master)](https://travis-ci.org/nraboy/ng2-cordova-oauth)
-[![PayPal](https://img.shields.io/badge/paypal-donate-yellow.svg)](https://paypal.me/nraboy)
-[![Bitcoin](https://img.shields.io/badge/bitcoin-donate-red.svg)](bitcoin://1M8SKTepmgA2KAUSZc7LpXN1owaky1DjNM)
 
-# Angular 2 Cordova Oauth
+# Cordova Oauth Social
 
 ng2-cordova-oauth is an Oauth library which easily integrates in Angular2/Ionic2 or any other WEB or Cordova applications. The purpose of this library is to quickly and easily obtain an access token from various web services to use their APIs.
 
-## Donations
+Changes and updates will be in this library for us @Wecodex
 
-If you found this project useful, please consider donating some Bitcoin to the following address:
 
-[1M8SKTepmgA2KAUSZc7LpXN1owaky1DjNM](bitcoin://1M8SKTepmgA2KAUSZc7LpXN1owaky1DjNM?amount=0.008)
 
 ## Requirements
 
@@ -19,21 +14,20 @@ For Cordova application:
 * [Apache Cordova InAppBrowser Plugin](http://cordova.apache.org/docs/en/3.0.0/cordova_inappbrowser_inappbrowser.md.html)
 * [Apache Cordova Whitelist Plugin](https://github.com/apache/cordova-plugin-whitelist)
 
-For Web application:
-* webpack, systemjs or amd loaders
 
 
-## Installing ng2-cordova-oauth Into Your Project
+
+
 
 ### Installing
 
 From the root of your Apache Cordova project, execute the following:
 
 ```
-npm install ng2-cordova-oauth-with-twitter --save
+npm install wecodexoficial/oauth-social-cordova --save
 ```
 
-This will install ng2-cordova-oauth and its dependencies.
+This will install wecodexoficial/oauth-social-cordova and its dependencies.
 
 ### Injecting:
 
@@ -175,20 +169,3 @@ Coming soon...
 
 All contributions must be made via the `development` branch.  This keeps the project more maintainable in terms of versioning as well as code control.
 
-
-## Have a question or found a bug (compliments work too)?
-
-This project is maintained by **Nic Raboy**.
-
-Tweet Nic Raboy on Twitter - [@nraboy](https://www.twitter.com/nraboy)
-
-
-## Resources
-
-Ionic 2 - [http://www.ionicframework.com](http://www.ionicframework.com)
-
-Angular 2 - [https://www.angular.io](https://www.angular.io)
-
-Apache Cordova - [http://cordova.apache.org](http://cordova.apache.org)
-
-Nic Raboy's Code Blog - [https://www.thepolyglotdeveloper.com](https://www.thepolyglotdeveloper.com)
