@@ -2,7 +2,7 @@ import { OAuthProvider, IOAuthOptions } from "../provider";
 export interface IFacebookOptions extends IOAuthOptions {
     authType?: string;
 }
-export declare class Facebook extends OAuthProvider {
+export declare class FacebookOauth extends OAuthProvider {
     options: IFacebookOptions;
     protected authUrl: string;
     protected defaults: Object;
