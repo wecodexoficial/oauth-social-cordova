@@ -1,0 +1,59 @@
+{
+  "_from": "ng2-cordova-oauth-with-twitter@0.0.12",
+  "_id": "ng2-cordova-oauth-with-twitter@0.0.12",
+  "_inBundle": false,
+  "_integrity": "sha512-TX4kmQENqH40DcKQlAYkBZ+VQyCpoxOejADzsLAOkSsvx/FlXteKXUeMYE/DhfaviQYcjYdIBDPtC8tKrwPsgw==",
+  "_location": "/ng2-cordova-oauth-with-twitter",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "ng2-cordova-oauth-with-twitter@0.0.12",
+    "name": "ng2-cordova-oauth-with-twitter",
+    "escapedName": "ng2-cordova-oauth-with-twitter",
+    "rawSpec": "0.0.12",
+    "saveSpec": null,
+    "fetchSpec": "0.0.12"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/ng2-cordova-oauth-with-twitter/-/ng2-cordova-oauth-with-twitter-0.0.12.tgz",
+  "_shasum": "4b8eb9ff4ab258cd595475aad0816d71a2fae8dc",
+  "_spec": "ng2-cordova-oauth-with-twitter@0.0.12",
+  "_where": "/Users/macbook/Documents/Desarrollos/IONIC/Crowdmention",
+  "author": {
+    "name": "Omurbek Kadyrbekov",
+    "url": "https://github.com/omurbekjk"
+  },
+  "bugs": {
+    "url": "https://github.com/omurbekjk/ng2-cordova-oauth"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "This package is to test oauth for twitter",
+  "devDependencies": {
+    "typescript": "^1.7.5"
+  },
+  "homepage": "https://github.com/omurbekjk",
+  "keywords": [
+    "angular 2",
+    "oauth",
+    "api",
+    "apache cordova",
+    "phonegap",
+    "ionic framework",
+    "ionic 2",
+    "typescript"
+  ],
+  "license": "MIT",
+  "name": "ng2-cordova-oauth-with-twitter",
+  "scripts": {
+    "build": "npm run build.system && npm run build.commonjs",
+    "build.commonjs": "tsc",
+    "build.system": "tsc --outFile ng2-cordova-oauth.system.js --module system",
+    "tsc": "npm run build.commonjs"
+  },
+  "version": "0.0.12"
+}
