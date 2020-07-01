@@ -13,9 +13,25 @@ Changes and updates will be in this library for us @Wecodex
 
 For Cordova application:
 * Apache Cordova 5+
-* [Apache Cordova InAppBrowser Plugin](http://cordova.apache.org/docs/en/3.0.0/cordova_inappbrowser_inappbrowser.md.html)
+
+
+* [Apache Cordova InAppBrowser Plugin](https://ionicframework.com/docs/native/in-app-browser)
+
+Installation
+```
+ionic cordova plugin add cordova-plugin-inappbrowser
+npm install @ionic-native/in-app-browser
+```
+
+
+
 * [Apache Cordova Whitelist Plugin](https://github.com/apache/cordova-plugin-whitelist)
 
+Installation
+```
+$ cordova plugin add cordova-plugin-whitelist
+$ cordova prepare
+```
 
 
 
