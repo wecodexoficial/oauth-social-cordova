@@ -1,6 +1,7 @@
 import { IOauthProvider } from './oauth';
 export interface IOAuthOptions {
     clientId?: string;
+    clientType?: string;
     appScope?: string[];
     redirectUri?: string;
     responseType?: string;
