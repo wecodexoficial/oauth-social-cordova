@@ -11,12 +11,12 @@ var __extends = (this && this.__extends) || (function () {
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
 var provider_1 = require("../provider");
-var Facebook = /** @class */ (function (_super) {
-    __extends(Facebook, _super);
-    function Facebook(options) {
+var FacebookOauth = /** @class */ (function (_super) {
+    __extends(FacebookOauth, _super);
+    function FacebookOauth(options) {
         if (options === void 0) { options = {}; }
         var _this = _super.call(this, options) || this;
-        _this.authUrl = 'https://www.facebook.com/v2.0/dialog/oauth';
+        _this.authUrl = 'https://www.facebook.com/v5.0/dialog/oauth';
         _this.defaults = {
             responseType: 'token'
         };
@@ -25,13 +25,13 @@ var Facebook = /** @class */ (function (_super) {
         }
         return _this;
     }
-    Facebook.prototype.optionsToDialogUrl = function (options) {
+    FacebookOauth.prototype.optionsToDialogUrl = function (options) {
         var url = _super.prototype.optionsToDialogUrl.call(this, options);
         if (options.authType) {
             url += "&auth_type=" + options.authType;
         }
         return url;
     };
-    return Facebook;
+    return FacebookOauth;
 }(provider_1.OAuthProvider));
-exports.Facebook = Facebook;
+exports.FacebookOauth = FacebookOauth;
